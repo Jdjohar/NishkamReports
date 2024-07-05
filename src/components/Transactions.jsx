@@ -30,6 +30,14 @@ const Transactions = () => {
       wrap: true,
     },
     {
+      name: 'Captured Date',
+      selector: row => new Date(row.captured_at * 1000).toLocaleString(),
+      sortable: true,
+      compact: true,
+      width: "4rem",
+      wrap: true,
+    },
+    {
       name: 'order_id',
       selector: row => row.order_id,
       sortable: true,

@@ -193,7 +193,7 @@ const Transactions = () => {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/Razortransactions', {
+      const response = await axios.post('https://nishkamapi.onrender.com/api/v1/Razortransactions', {
         from: fromDate,
         to: toDate,
       });
